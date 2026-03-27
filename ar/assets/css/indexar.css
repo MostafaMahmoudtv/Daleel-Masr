@@ -1217,3 +1217,22 @@ nav ul li a,
 .footer-logo{
   width: 50px;
 }
+.room-details .room-header-image .room-badge,.rooms-2 .rooms-grid .room-card .room-image .room-features,.listing-badge{
+  left: unset;
+  right: 20px;
+}
+.listing-favorite{
+  left: 12px;
+  right: unset;
+}
+.arabic-select {
+  direction: rtl;
+  text-align: right;
+  background-position: left 0.75rem center;  
+  padding-right: 0.75rem;
+  padding-left: 2rem;  
+}
+.feature-badge,.listing-badge{
+  background: linear-gradient(135deg, #4f2396, #7b4ce2) !important;
+color: #fff !important;
+}
