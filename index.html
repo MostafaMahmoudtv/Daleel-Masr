@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>دليل مصر</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href=" ../../ar/assets/img/favicon.png" rel="icon" />
+    <link
+      href=" ../../ar/assets/img/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href=" ../../ar/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href=" ../../ar/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href=" ../../ar/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../../ar/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href=" ../../ar/assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="../../ar/assets/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ar/assets/css/indexar.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="index-page" dir="rtl">
+    <header dir="rtl" id="header" class="header sticky-top">
+      <div class="branding d-flex align-items-cente">
+        <div
+          class="container position-relative d-flex align-items-center justify-content-between"
+        >
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="../../ar/assets/img/logo.webp" alt=""> -->
+            <img src=" ../../ar/assets/img/favicon.png" alt="logo" />
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html" class="active">الرأيسية</a></li>
+              <li><a href="ar/rooms.html">وحدات</a></li>
+              <li><a href="ar/hotels.html">فنادق</a></li>
+
+              <li><a href="ar/contact.html">تواصل معنا</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+          <div class="languageAndCurrency d-flex align-items-center gap-3">
+            <!-- Language -->
+            <a
+              href="en/index.html"
+              class="lang-item d-flex align-items-center gap-1"
+            >
+              <i class="bi bi-globe"></i>
+              <span>English</span>
+            </a>
+
+            <!-- Divider -->
+            <span class="divider">|</span>
+
+            <!-- Currency -->
+            <a href="#" class="lang-item d-flex align-items-center gap-1">
+              <i class="bi bi-currency-dollar"></i>
+              <span>جنيه</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section with Airbnb-style Search -->
+      <section class="hero-section">
+        
+        <div class="container">
+          <!-- Modern Airbnb-style Search Bar -->
+          <div
+            class="airbnb-search-wrapper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="airbnb-search-container">
+              <!-- Where -->
+              <div class="airbnb-search-item where-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">الوجهة</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="searchCity"
+                    placeholder="ابحث عن وجهة"
+                  />
+                </div>
+              </div>
+
+              <div class="airbnb-divider"></div>
+
+              <!-- Check-in -->
+              <div class="airbnb-search-item date-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">تسجيل الدخول</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="checkIn"
+                    placeholder="أضف تاريخ"
+                    onfocus="
+                      this.type = 'date';
+                      this.focus();
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="airbnb-divider"></div>
+
+              <!-- Check-out -->
+              <div class="airbnb-search-item date-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">تسجيل الخروج</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="checkOut"
+                    placeholder="أضف تاريخ"
+                    onfocus="
+                      this.type = 'date';
+                      this.focus();
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="airbnb-divider"></div>
+
+              <!-- Who -->
+              <div class="airbnb-search-item who-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">المستضيف</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="searchGuests"
+                    placeholder="أضف عدد الضيوف"
+                    readonly
+                    onclick="toggleGuestsDropdown()"
+                  />
+                </div>
+
+                <!-- Search Button -->
+                <button
+                  class="airbnb-search-btn"
+                  onclick="handleAirbnbSearch()"
+                >
+                  <i class="bi bi-search"></i>
+                  <span>بحث</span>
+                </button>
+              </div>
+
+              <!-- Guests Dropdown -->
+              <div class="guests-dropdown" id="guestsDropdown">
+                <div class="guest-type">
+                  <div class="guest-info">
+                    <div class="guest-label">بالغين</div>
+                    <div class="guest-desc">من سن 13 فما فوق</div>
+                  </div>
+                  <div class="guest-counter">
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('adults', -1)"
+                    >
+                      −
+                    </button>
+                    <span id="adultsCount">1</span>
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('adults', 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="guest-type">
+                  <div class="guest-info">
+                    <div class="guest-label">أطفال</div>
+                    <div class="guest-desc">أعمار 2-12</div>
+                  </div>
+                  <div class="guest-counter">
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('children', -1)"
+                    >
+                      −
+                    </button>
+                    <span id="childrenCount">0</span>
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('children', 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="guest-type">
+                  <div class="guest-info">
+                    <div class="guest-label">رضع</div>
+                    <div class="guest-desc">أقل من سنتين</div>
+                  </div>
+                  <div class="guest-counter">
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('infants', -1)"
+                    >
+                      −
+                    </button>
+                    <span id="infantsCount">0</span>
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('infants', 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Stays Section -->
+      <section class="section-padding" id="stays">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <div>
+              <h2 class="section-title">إقامات مميزة</h2>
+              <p class="section-subtitle">
+                شقق وفنادق مختارة بعناية في جميع أنحاء مصر
+              </p>
+            </div>
+            <a href="#" class="view-all-link"
+              >عرض الكل <i class="bi bi-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="listing-grid">
+            <!-- Card 1 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-14.webp"
+                  alt="شقة عصرية"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge urgent">تبقى 2 فقط</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">شقة عصرية في الزمالك</h3>
+                </div>
+                <p class="listing-location">القاهرة، مصر</p>
+                <p class="listing-dates">2 ضيف • غرفة نوم</p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="45" data-egp="2200"
+                      >2200 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-6.webp"
+                  alt="جناح بإطلالة على النيل"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge hot">تم الحجز 5 مرات اليوم</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">جناح فاخر بإطلالة النيل</h3>
+                </div>
+                <p class="listing-location">وسط القاهرة</p>
+                <p class="listing-dates">4 ضيوف • 2 غرف نوم</p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="89" data-egp="4350"
+                      >4350 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-12.webp"
+                  alt="شقة بإطلالة الأهرامات"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">شقة بإطلالة الأهرامات</h3>
+                </div>
+                <p class="listing-location">الجيزة</p>
+                <p class="listing-dates">6 ضيوف • 3 غرف نوم</p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="65" data-egp="3180"
+                      >3180 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-19.webp"
+                  alt="شقة بإطلالة بحر"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">مضيف ممتاز</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">
+                    شقة فاخرة بإطلالة بحرية في الإسكندرية
+                  </h3>
+                </div>
+                <p class="listing-location">الإسكندرية</p>
+                <p class="listing-dates">3 ضيوف • 2 غرف نوم</p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="55" data-egp="2690"
+                      >2690 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-5.webp"
+                  alt="منتجع الغردقة"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">فيلا على الشاطئ بالغردقة</h3>
+                </div>
+                <p class="listing-location">الغردقة</p>
+                <p class="listing-dates">8 ضيوف • 4 غرف نوم</p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="120" data-egp="5870"
+                      >5870 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-8.webp"
+                  alt="فندق الأقصر"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge urgent">تبقى 1 فقط</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">غرفة فندق على ضفاف النيل</h3>
+                </div>
+                <p class="listing-location">الأقصر</p>
+                <p class="listing-dates">2 ضيف • غرفة نوم</p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="35" data-egp="1710"
+                      >1710 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hotels Section -->
+      <section
+        class="section-padding bg-light"
+        id="hotels"
+        style="background: var(--bg-light)"
+      >
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <div>
+              <h2 class="section-title">فنادق مميزة</h2>
+              <p class="section-subtitle">
+                فنادق مختارة بعناية في أفضل الوجهات المصرية
+              </p>
+            </div>
+            <a href="#" class="view-all-link"
+              >عرض جميع الفنادق <i class="bi bi-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="listing-grid">
+            <!-- Hotel 1 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-3.webp"
+                  alt="نيل ريتز كارلتون"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">5 نجوم</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">نيل ريتز كارلتون</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i> وسط
+                  القاهرة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • 2 ضيوف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="180" data-egp="8820"
+                      >8820 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 2 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-7.webp"
+                  alt="ماريوت مينا هاوس"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge urgent">إطلالة الأهرامات</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">ماريوت مينا هاوس</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الجيزة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مفردة • 1 ضيف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="220" data-egp="10780"
+                      >10780 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 3 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-11.webp"
+                  alt="فور سيزونز الإسكندرية"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">فاخر</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">فور سيزونز الإسكندرية</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i> سان
+                  ستيفانو، الإسكندرية
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • إطلالة بحر
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="250" data-egp="12250"
+                      >12250 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 4 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-14.webp"
+                  alt="هيلتون الأقصر"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge hot">إطلالة النيل</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">هيلتون الأقصر ريزورت</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الأقصر
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • 2 ضيوف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="95" data-egp="4655"
+                      >4655 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 5 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-6.webp"
+                  alt="شتاينبرجر الغردقة"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">كامل الخدمات</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">شتاينبرجر الغردقة</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الغردقة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مفردة • 1 ضيف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="85" data-egp="4165"
+                      >4165 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 6 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-12.webp"
+                  alt="سوفيتيل القاهرة"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">سوفيتيل القاهرة النيل الجزيرة</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الزمالك، القاهرة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • إطلالة النيل
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="160" data-egp="7840"
+                      >7840 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-padding bg-light"
+        id="hotels"
+        style="background: var(--bg-light)"
+      >
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <div>
+              <h2 class="section-title">وحدات</h2>
+              <p class="section-subtitle">
+                فنادق مختارة بعناية في أفضل الوجهات المصرية
+              </p>
+            </div>
+            <a href="#" class="view-all-link"
+              >عرض جميع الفنادق <i class="bi bi-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="listing-grid">
+            <!-- Hotel 1 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-3.webp"
+                  alt="نيل ريتز كارلتون"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">5 نجوم</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">نيل ريتز كارلتون</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i> وسط
+                  القاهرة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • 2 ضيوف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="180" data-egp="8820"
+                      >8820 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 2 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-7.webp"
+                  alt="ماريوت مينا هاوس"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge urgent">إطلالة الأهرامات</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">ماريوت مينا هاوس</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الجيزة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مفردة • 1 ضيف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="220" data-egp="10780"
+                      >10780 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 3 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-11.webp"
+                  alt="فور سيزونز الإسكندرية"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">فاخر</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">فور سيزونز الإسكندرية</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i> سان
+                  ستيفانو، الإسكندرية
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • إطلالة بحر
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="250" data-egp="12250"
+                      >12250 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 4 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-14.webp"
+                  alt="هيلتون الأقصر"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge hot">إطلالة النيل</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">هيلتون الأقصر ريزورت</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الأقصر
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • 2 ضيوف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="95" data-egp="4655"
+                      >4655 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 5 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-6.webp"
+                  alt="شتاينبرجر الغردقة"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">كامل الخدمات</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">شتاينبرجر الغردقة</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الغردقة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مفردة • 1 ضيف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="85" data-egp="4165"
+                      >4165 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 6 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-12.webp"
+                  alt="سوفيتيل القاهرة"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">سوفيتيل القاهرة النيل الجزيرة</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الزمالك، القاهرة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • إطلالة النيل
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="160" data-egp="7840"
+                      >7840 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-padding bg-light"
+        id="hotels"
+        style="background: var(--bg-light)"
+      >
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <div>
+              <h2 class="section-title">فنادق</h2>
+              <p class="section-subtitle">
+                فنادق مختارة بعناية في أفضل الوجهات المصرية
+              </p>
+            </div>
+            <a href="#" class="view-all-link"
+              >عرض جميع الفنادق <i class="bi bi-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="listing-grid">
+            <!-- Hotel 1 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-3.webp"
+                  alt="نيل ريتز كارلتون"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">5 نجوم</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">نيل ريتز كارلتون</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i> وسط
+                  القاهرة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • 2 ضيوف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="180" data-egp="8820"
+                      >8820 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 2 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-7.webp"
+                  alt="ماريوت مينا هاوس"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge urgent">إطلالة الأهرامات</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">ماريوت مينا هاوس</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الجيزة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مفردة • 1 ضيف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="220" data-egp="10780"
+                      >10780 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 3 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/showcase-11.webp"
+                  alt="فور سيزونز الإسكندرية"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">فاخر</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">فور سيزونز الإسكندرية</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i> سان
+                  ستيفانو، الإسكندرية
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • إطلالة بحر
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="250" data-egp="12250"
+                      >12250 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 4 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-14.webp"
+                  alt="هيلتون الأقصر"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge hot">إطلالة النيل</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">هيلتون الأقصر ريزورت</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الأقصر
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • 2 ضيوف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="95" data-egp="4655"
+                      >4655 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 5 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-6.webp"
+                  alt="شتاينبرجر الغردقة"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <span class="listing-badge">كامل الخدمات</span>
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">شتاينبرجر الغردقة</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الغردقة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مفردة • 1 ضيف
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="85" data-egp="4165"
+                      >4165 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hotel 6 -->
+            <div class="listing-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="listing-image-wrapper">
+                <img
+                  src="../../ar/assets/img/hotel/room-12.webp"
+                  alt="سوفيتيل القاهرة"
+                  class="listing-image"
+                  loading="lazy"
+                />
+                <button class="listing-favorite">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+              <div class="listing-details">
+                <div class="listing-header">
+                  <h3 class="listing-title">سوفيتيل القاهرة النيل الجزيرة</h3>
+                </div>
+                <p class="listing-location">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 12px"></i>
+                  الزمالك، القاهرة
+                </p>
+                <p
+                  class="listing-dates"
+                  style="color: var(--text-medium); font-size: 14px"
+                >
+                  <i class="bi bi-door-open"></i> غرفة مزدوجة • إطلالة النيل
+                </p>
+                <div class="listing-footer">
+                  <div class="listing-price">
+                    <span class="price-amount" data-usd="160" data-egp="7840"
+                      >7840 جنيه</span
+                    >
+                    <span class="price-unit">/ ليلة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trust-section">
+        <div class="container">
+          <div class="trust-grid">
+            <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="trust-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="trust-number">5000+</div>
+              <div class="trust-label">حجوزات ناجحة</div>
+            </div>
+            <div class="trust-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="trust-icon">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="trust-number">4.8</div>
+              <div class="trust-label">متوسط التقييمات</div>
+            </div>
+            <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="trust-icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <div class="trust-number">12+</div>
+              <div class="trust-label">مدن مغطاة</div>
+            </div>
+            <div class="trust-item" data-aos="fade-up" data-aos-delay="250">
+              <div class="trust-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="trust-number">100%</div>
+              <div class="trust-label">حجز آمن عبر واتساب</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-title">آراء المسافرين</h2>
+            <p class="section-subtitle">تقييمات حقيقية من ضيوفنا</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "الحجز عبر واتساب كان سهلاً جداً! الشقة في الزمالك كانت كما هو
+                  موضح بالضبط. دفعت نقداً عند الوصول دون أي مشاكل. أنصح بشدة
+                  بدليل مصر!"
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">أ</div>
+                  <div class="author-info">
+                    <h5>أحمد الرشيد</h5>
+                    <span>الرياض، السعودية</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">
+                  "ما شاء الله خدمة ممتازة! تأجير السيارة كان سلساً، وتوصية
+                  السائق وفرت علينا الكثير من الوقت في زحمة القاهرة. سأحجز مرة
+                  أخرى في الرحلة القادمة إن شاء الله"
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">م</div>
+                  <div class="author-info">
+                    <h5>محمد الفارسي</h5>
+                    <span>دبي، الإمارات</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="testimonial-text">
+                  "الباقة العائلية كانت مثالية لقضاء إجازتنا. شقة إطلالة
+                  الأهرامات أسعدت أطفالنا كثيراً. التأكيد الفوري عبر واتساب
+                  أعطانا راحة البال."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">ف</div>
+                  <div class="author-info">
+                    <h5>فاطمة الزهراني</h5>
+                    <span>جدة، السعودية</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <a href="index.html" class=" d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="../../ar/assets/img/logo.webp" alt=""> -->
+                <img class="footer-logo" src=" ../../ar/assets/img/favicon.png" alt="logo" />
+              </a>
+             </div>
+            <p class="footer-desc">
+              <span>دليل مصر :</span>
+              شريكك الموثوق للشقق والفنادق وتأجير السيارات في جميع أنحاء مصر.
+              احجز عبر واتساب، ادفع عند الوصول، سافر بثقة.
+            </p>
+            <div class="footer-social">
+              <a href="https://snapchat.com/t/hIky1SfR" class="social-link"
+                ><i class="fab fa-snapchat" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/daleel_masr?igsh=dWIxMm0ycXlqY2Rm&utm_source=qr"
+                class="social-link"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://wa.me/201010952339"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <ul class="footer-links">
+              <li><a href="ar/about.html">من نحن</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer-links">
+              <li><a href="#">مركز المساعدة</a></li>
+              <li><a href="#">معلومات الأمان</a></li>
+              <li><a href="#">خيارات الإلغاء</a></li>
+              <li><a href="ar/contact.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer-links">
+              <li><a href="ar/terms.html">شروط الخدمة</a></li>
+              <li><a href="#">سياسة الخصوصية</a></li>
+              <li><a href="#">سياسة الإلغاء</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2024 دليل مصر. جميع الحقوق محفوظة.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../../ar/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../ar/assets/vendor/php-email-form/validate.js"></script>
+    <script src="../../ar/assets/vendor/aos/aos.js"></script>
+    <script src="../../ar/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../../ar/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../ar/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../../ar/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../../ar/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../../ar/assets/js/main.js"></script>
+  </body>
+</html>

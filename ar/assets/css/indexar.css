@@ -1,0 +1,1219 @@
+:root {
+  --primary-color: #007aff;
+  --primary-hover: #005fc7;
+  --secondary-color: #008489;
+  --text-dark: #222222;
+  --text-medium: #717171;
+  --text-light: #b0b0b0;
+  --bg-light: #f7f7f7;
+  --border-color: #dddddd;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.28);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Cairo",
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif !important;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Modern Navbar */
+.navbar-custom {
+  background: #ffffff;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.navbar-custom.scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary-color) !important;
+  letter-spacing: -0.5px;
+}
+
+.navbar-brand span {
+  color: var(--text-dark);
+}
+
+.nav-link-custom {
+  color: var(--text-dark) !important;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 16px !important;
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.nav-link-custom:hover {
+  background-color: var(--bg-light);
+  color: var(--text-dark) !important;
+}
+
+.nav-link-custom.active {
+  color: var(--text-dark) !important;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.control-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  background: white;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  border-color: var(--text-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.control-btn i {
+  font-size: 12px;
+}
+
+/* Hero Section - Airbnb Style */
+.hero-section {
+  padding: 60px 0 40px;
+ }
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+  letter-spacing: -1px;
+}
+
+.hero-title .arabic {
+  font-family: "Cairo", sans-serif;
+  color: var(--primary-color);
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--text-medium);
+  margin-bottom: 8px;
+}
+
+.hero-trust {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-medium);
+  margin-bottom: 32px;
+}
+
+.hero-trust i {
+  color: var(--secondary-color);
+}
+
+/* Airbnb Modern Search Bar */
+.hero-section {
+  padding: 80px 0 60px;
+ 
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+  letter-spacing: -1px;
+}
+
+.hero-title .arabic {
+  font-family: "Cairo", sans-serif;
+  color: var(--primary-color);
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: var(--text-medium);
+  font-weight: 400;
+}
+
+/* Airbnb Search Container */
+.airbnb-search-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.airbnb-search-container {
+  background: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  height: 72px;
+  border: 1px solid #dddddd;
+  position: relative;
+  transition: box-shadow 0.2s ease;
+}
+
+.airbnb-search-container:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.airbnb-search-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.airbnb-search-item:hover {
+  background-color: #ebebeb;
+}
+
+.airbnb-search-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.airbnb-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-dark);
+  text-transform: none;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.airbnb-input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--text-medium);
+  outline: none;
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.airbnb-input::placeholder {
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+/* Dividers */
+.airbnb-divider {
+  width: 1px;
+  height: 32px;
+  background: #dddddd;
+  flex-shrink: 0;
+}
+
+/* Specific item sizing */
+.where-item {
+  flex: 1.5;
+}
+
+.date-item {
+  flex: 1;
+}
+
+.who-item {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 8px;
+}
+
+/* Search Button */
+.airbnb-search-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.airbnb-search-btn:hover {
+  background: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+.airbnb-search-btn i {
+  font-size: 16px;
+}
+
+.airbnb-search-btn span {
+  display: none;
+}
+
+/* Expanded search button with text */
+.airbnb-search-btn.with-text {
+  width: auto;
+  padding: 0 20px;
+  border-radius: 24px;
+  gap: 8px;
+}
+
+.airbnb-search-btn.with-text span {
+  display: inline;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Guests Dropdown */
+.guests-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  width: 320px;
+  display: none;
+  z-index: 100;
+}
+
+.guests-dropdown.active {
+  display: block;
+}
+
+.guest-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.guest-type:last-child {
+  border-bottom: none;
+}
+
+.guest-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.guest-desc {
+  font-size: 12px;
+  color: var(--text-medium);
+  margin-top: 2px;
+}
+
+.guest-counter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.counter-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #b0b0b0;
+  background: white;
+  color: var(--text-medium);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.counter-btn:hover {
+  border-color: var(--text-dark);
+  color: var(--text-dark);
+}
+
+.counter-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .airbnb-search-container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 24px;
+    padding: 16px;
+  }
+
+  .airbnb-search-item {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+
+  .airbnb-divider {
+    display: none;
+  }
+
+  .who-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .airbnb-search-btn {
+    width: 100%;
+    border-radius: 12px;
+    margin: 12px 0 0 0;
+    height: 48px;
+  }
+
+  .airbnb-search-btn.with-text {
+    border-radius: 12px;
+  }
+
+  .guests-dropdown {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+}
+
+/* Section Styling */
+.section-padding {
+   padding: 20px 0;
+}
+
+.section-header {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  color: var(--text-medium);
+  font-size: 16px;
+}
+
+.view-all-link {
+  color: var(--text-dark);
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Listing Cards - Airbnb Style */
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.listing-card {
+  cursor: pointer;
+  group: hover;
+}
+
+.listing-image-wrapper {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.listing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.listing-card:hover .listing-image {
+  transform: scale(1.05);
+}
+
+.listing-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dark);
+  backdrop-filter: blur(4px);
+}
+
+.listing-badge.urgent {
+  background: #ff385c;
+  color: white;
+}
+
+.listing-badge.hot {
+  background: #ff5a5f;
+  color: white;
+}
+
+.listing-favorite {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.listing-card:hover .listing-favorite {
+  opacity: 1;
+}
+
+.listing-favorite:hover {
+  transform: scale(1.1);
+}
+
+.listing-details {
+  padding: 0 4px;
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 4px;
+}
+
+.listing-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listing-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.listing-rating i {
+  color: var(--text-dark);
+  font-size: 12px;
+}
+
+.listing-location {
+  color: var(--text-medium);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.listing-dates {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.listing-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.listing-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price-amount {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.price-unit {
+  font-size: 14px;
+  color: var(--text-medium);
+}
+
+.whatsapp-btn-sm {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.whatsapp-btn-sm:hover {
+  background: #128c7e;
+  transform: translateY(-1px);
+}
+
+/* Car Rental Cards */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.car-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.car-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.car-image-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-content {
+  padding: 20px;
+}
+
+.car-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.car-specs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--text-medium);
+}
+
+.car-specs span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.car-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.car-price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-medium);
+}
+
+/* Package Cards */
+.package-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #ff5a5f);
+}
+
+.package-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.package-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff8e1;
+  color: #f9a825;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.package-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.package-includes {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.package-includes li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-medium);
+  margin-bottom: 8px;
+}
+
+.package-includes i {
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.package-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.package-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.package-price span {
+  font-size: 14px;
+  color: var(--text-medium);
+  font-weight: 400;
+}
+
+/* Trust Section */
+.trust-section {
+  background: var(--bg-light);
+  padding: 80px 0;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.trust-item {
+  padding: 24px;
+}
+
+.trust-icon {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: var(--shadow-sm);
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.trust-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.trust-label {
+  font-size: 16px;
+  color: var(--text-medium);
+  font-weight: 500;
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: white;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+
+.testimonial-stars {
+  color: #ffb400;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.author-info h5 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.author-info span {
+  font-size: 13px;
+  color: var(--text-medium);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #ff5a5f 100%);
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+}
+
+.cta-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  opacity: 0.95;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-whatsapp-btn {
+  background: white;
+  color: #25d366;
+  border: none;
+  padding: 18px 40px;
+  border-radius: var(--radius-full);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-whatsapp-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.cta-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 999;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+  }
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1) rotate(10deg);
+  background: #128c7e;
+}
+
+/* Footer */
+.footer-custom {
+  background: var(--bg-light);
+  padding: 60px 0 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.footer-desc {
+  color: var(--text-medium);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+
+.social-link:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: var(--text-medium);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--text-dark);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 14px;
+  color: var(--text-medium);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .search-field {
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+  .search-field::after {
+    display: none;
+  }
+
+  .search-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .listing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cta-features {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Animations */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+.badge-new {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header {
+  background-color: #fff;
+box-shadow: 0px 2px 8px rgba(149, 149, 149, 0.1);}
+.logo h1,
+nav ul li a,
+.languageAndCurrency a apan {
+  color: black !important;
+}
+.languageAndCurrency {
+  font-size: 14px;
+}
+
+.lang-item {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.lang-item i {
+  font-size: 16px;
+}
+
+.lang-item:hover {
+  color: #0d6efd;
+}
+
+.divider {
+  color: #ccc;
+}
+.container{
+  max-width: 1280px !important;
+}
+.scroll-top,.airbnb-search-btn {
+  background-color: #4f2396 !important;
+}
+.airbnb-search-item{
+  padding: 0 20px 0 0 !important;
+}
+.footer-logo{
+  width: 50px;
+}
