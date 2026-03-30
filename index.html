@@ -51,7 +51,7 @@
 
   <body class="index-page" dir="rtl">
     <header dir="rtl" id="header" class="header sticky-top">
-      <div class="branding d-flex align-items-cente">
+      <div class="branding d-flex align-items-cente nav-content">
         <div
           class="container position-relative d-flex align-items-center justify-content-between"
         >
@@ -97,6 +97,153 @@
           </div>
         </div>
       </div>
+          <div
+            class="airbnb-search-wrapper sticky-search-h"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="airbnb-search-container">
+              <div class="airbnb-search-item where-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">الوجهة</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="searchCity"
+                    placeholder="ابحث عن وجهة"
+                  />
+                </div>
+              </div>
+
+              <div class="airbnb-divider"></div>
+              <div class="airbnb-search-item date-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">تسجيل الدخول</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="checkIn"
+                    placeholder="أضف تاريخ"
+                    onfocus="
+                      this.type = 'date';
+                      this.focus();
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="airbnb-divider"></div>
+
+              <div class="airbnb-search-item date-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">تسجيل الخروج</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="checkOut"
+                    placeholder="أضف تاريخ"
+                    onfocus="
+                      this.type = 'date';
+                      this.focus();
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="airbnb-divider"></div>
+
+              <!-- Who -->
+              <div class="airbnb-search-item who-item">
+                <div class="airbnb-search-content">
+                  <label class="airbnb-label">المستضيف</label>
+                  <input
+                    type="text"
+                    class="airbnb-input"
+                    id="searchGuests"
+                    placeholder="أضف عدد الضيوف"
+                    readonly
+                    onclick="toggleGuestsDropdown()"
+                  />
+                </div>
+
+                <!-- Search Button -->
+                <button
+                  class="airbnb-search-btn"
+                  onclick="handleAirbnbSearch()"
+                >
+                  <i class="bi bi-search"></i>
+                  <span>بحث</span>
+                </button>
+              </div>
+
+              <!-- Guests Dropdown -->
+              <div class="guests-dropdown" id="guestsDropdown">
+                <div class="guest-type">
+                  <div class="guest-info">
+                    <div class="guest-label">بالغين</div>
+                    <div class="guest-desc">من سن 13 فما فوق</div>
+                  </div>
+                  <div class="guest-counter">
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('adults', -1)"
+                    >
+                      −
+                    </button>
+                    <span id="adultsCount">1</span>
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('adults', 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="guest-type">
+                  <div class="guest-info">
+                    <div class="guest-label">أطفال</div>
+                    <div class="guest-desc">أعمار 2-12</div>
+                  </div>
+                  <div class="guest-counter">
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('children', -1)"
+                    >
+                      −
+                    </button>
+                    <span id="childrenCount">0</span>
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('children', 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="guest-type">
+                  <div class="guest-info">
+                    <div class="guest-label">رضع</div>
+                    <div class="guest-desc">أقل من سنتين</div>
+                  </div>
+                  <div class="guest-counter">
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('infants', -1)"
+                    >
+                      −
+                    </button>
+                    <span id="infantsCount">0</span>
+                    <button
+                      class="counter-btn"
+                      onclick="updateGuests('infants', 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
 
     <main class="main">
@@ -1433,8 +1580,7 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
+     <!-- Vendor JS Files -->
     <script src="../../ar/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../ar/assets/vendor/php-email-form/validate.js"></script>
     <script src="../../ar/assets/vendor/aos/aos.js"></script>

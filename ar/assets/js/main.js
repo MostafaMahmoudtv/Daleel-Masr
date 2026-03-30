@@ -199,3 +199,16 @@
   });
 
 })();
+
+window.addEventListener("scroll", function () {
+    let stickySearch = document.querySelector(".sticky-search-h");
+    let navContent = document.querySelector(".nav-content");
+
+    if (window.scrollY > 300) {
+        stickySearch.style.display = "block";
+        navContent.classList.add("hidden");
+    } else {
+        stickySearch.style.display = "none";
+        navContent.classList.remove("hidden");
+    }
+});
