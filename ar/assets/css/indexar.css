@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #007aff;
-  --primary-hover: #005fc7;
-  --secondary-color: #008489;
+   --primary-color: #7b4dff;
+  --primary-hover: #4f2396;
+  --secondary-color: #895ffb;
   --text-dark: #222222;
   --text-medium: #717171;
   --text-light: #b0b0b0;
@@ -1236,3 +1236,31 @@ nav ul li a,
   background: linear-gradient(135deg, #4f2396, #7b4ce2) !important;
 color: #fff !important;
 }
+.auth-links {
+  font-size: 15px;
+}
+
+.auth-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.auth-btn i {
+  font-size: 18px;
+}
+
+/* Hover */
+.auth-btn:hover,.auth-btn.register:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+ 
+
+ 

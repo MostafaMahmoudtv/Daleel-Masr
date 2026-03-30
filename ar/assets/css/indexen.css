@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #007aff;
-  --primary-hover: #005fc7;
+  --primary-color: #7b4dff;
+  --primary-hover: #4f2396;
   --secondary-color: #008489;
   --text-dark: #222222;
   --text-medium: #717171;
@@ -1212,4 +1212,9 @@ nav ul li a,
 
 .footer-logo {
   width: 50px;
+}
+
+.feature-badge,.listing-badge{
+  background: linear-gradient(135deg, #4f2396, #7b4ce2) !important;
+color: #fff !important;
 }

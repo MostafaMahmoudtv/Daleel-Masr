@@ -43,6 +43,50 @@
       rel="stylesheet"
     />
 
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+
+    .form-box {
+      background: #fff;
+      border-radius: 25px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .form-control, .form-select {
+      border-radius: 15px;
+      padding: 12px;
+    }
+
+    .upload-box {
+      border: 2px dashed #ccc;
+      border-radius: 25px;
+      padding: 40px;
+      text-align: center;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .upload-box:hover {
+      border-color: #0d6efd;
+    }
+
+    .badge-custom {
+      background: #d1e7dd;
+      color: #0f5132;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 14px;
+    }
+
+    .submit-btn {
+      border-radius: 20px;
+      padding: 15px;
+      font-size: 18px;
+    }
+  </style>
     <!-- =======================================================
   * Template Name: Grandoria
   * Template URL: https://bootstrapmade.com/grandoria-bootstrap-hotel-template/
@@ -52,7 +96,7 @@
   ======================================================== -->
   </head>
 
-  <body class="privacy-page" dir="rtl">
+  <body class="index-page" dir="rtl">
     <header dir="rtl" id="header" class="header sticky-top">
       <div class="branding d-flex align-items-cente">
         <div
@@ -67,13 +111,12 @@
           <nav id="navmenu" class="navmenu">
             <ul>
               <li><a href="../index.html" class="active">الرأيسية</a></li>
-
               <li><a href="rooms.html">وحدات</a></li>
               <li><a href="hotels.html">فنادق</a></li>
 
                <li><a href="contact.html">تواصل معنا</a></li>
               <li><a href="host.html">كن مضيفا </a></li>
-            </ul>
+             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
           <div class="languageAndCurrency d-flex align-items-center gap-3">
@@ -94,168 +137,153 @@
               <i class="bi bi-currency-dollar"></i>
               <span>جنيه</span>
             </a>
+            <div class="auth-links d-flex align-items-center gap-3">
+              <a href="../shared/register.html" class="auth-btn register">
+                <i class="bi bi-person-plus"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
-
     <main class="main">
-  <section id="privacy" class="privacy section">
-    <div class="container" data-aos="fade-up">
-
-      <!-- الهيدر -->
-      <div class="privacy-header" data-aos="fade-up">
-        <div class="header-content">
-          <div class="last-updated">تاريخ السريان: 27 فبراير 2025</div>
-          <h1>سياسة الخصوصية</h1>
-          <p class="intro-text">
-            توضح سياسة الخصوصية هذه كيفية جمع واستخدام ومعالجة ومشاركة معلوماتك، بما في ذلك المعلومات الشخصية، عند استخدامك لخدماتنا.
+      <div class="container py-5" style="max-width: 900px">
+        <!-- Header -->
+        <div class="text-center mb-5">
+          <h1 class="fw-bold mb-3">ضيف شقتك مع دليل مصر 🇪🇬</h1>
+          <p class="text-muted fs-5">
+            احصل على عملاء من الخليج والسعودية والإمارات بدون أي رسوم مقدمة
           </p>
+
+          <div class="badge-custom d-inline-flex align-items-center gap-2 mt-3">
+            <i class="fas fa-check-circle"></i>
+            عمولة فقط عند الحجز • تسويق مجاني • عملاء جاهزين
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form
+          action="#"
+          method="POST"
+          enctype="multipart/form-data"
+          class="form-box"
+        >
+          <!-- معلوماتك -->
+          <h4 class="mb-4">
+            <i class="fas fa-user me-2"></i> معلوماتك الشخصية
+          </h4>
+
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label class="form-label">الاسم الكامل</label>
+              <input type="text" class="form-control" required />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">رقم الواتساب *</label>
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="01xxxxxxxxx"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- تفاصيل الوحدة -->
+          <h4 class="mb-4"><i class="fas fa-home me-2"></i> تفاصيل الوحدة</h4>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label class="form-label">المدينة</label>
+              <select class="form-select">
+                <option>اختر المدينة</option>
+                <option>القاهرة</option>
+                <option>الإسكندرية</option>
+                <option>الغردقة</option>
+                <option>شرم الشيخ</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">المنطقة</label>
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-6 col-md-3">
+              <label class="form-label">نوع الوحدة</label>
+              <select class="form-select">
+                <option>شقة</option>
+                <option>فيلا</option>
+              </select>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <label class="form-label">الغرف</label>
+              <input type="number" class="form-control" />
+            </div>
+
+            <div class="col-6 col-md-3">
+              <label class="form-label">الحمامات</label>
+              <input type="number" class="form-control" />
+            </div>
+
+            <div class="col-6 col-md-3">
+              <label class="form-label">السعة</label>
+              <input type="number" class="form-control" />
+            </div>
+          </div>
+
+          <!-- الأسعار -->
+          <h4 class="mb-4"><i class="fas fa-money-bill me-2"></i> الأسعار</h4>
+
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label class="form-label">السعر في الليلة</label>
+              <input type="number" class="form-control" required />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">أقل عدد ليالي</label>
+              <input type="number" class="form-control" />
+            </div>
+          </div>
+
+          <!-- وصف -->
+          <h4 class="mb-3">الوصف</h4>
+          <textarea class="form-control mb-4" rows="4"></textarea>
+
+          <!-- رفع الصور -->
+          <h4 class="mb-3"><i class="fas fa-camera me-2"></i> الصور</h4>
+
+          <label class="upload-box mb-4 w-100">
+            <i class="fas fa-cloud-upload-alt fa-3x text-primary mb-3"></i>
+            <div>اضغط لرفع الصور</div>
+            <input type="file" class="d-none" multiple />
+          </label>
+
+          <!-- جوجل ماب -->
+          <h4 class="mb-3">رابط جوجل ماب</h4>
+          <input type="url" class="form-control mb-4" />
+
+          <!-- Submit -->
+          <button class="btn btn-primary w-100 submit-btn">
+            <i class="fas fa-paper-plane me-2"></i>
+            إرسال الطلب
+          </button>
+        </form>
+
+        <!-- WhatsApp -->
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-success px-4 py-3">
+            <i class="fab fa-whatsapp me-2"></i>
+            ابعتلي على واتساب
+          </a>
         </div>
       </div>
-
-      <!-- المحتوى -->
-      <div class="privacy-content" data-aos="fade-up">
-
-        <!-- المقدمة -->
-        <div class="content-section">
-          <h2>1. المقدمة</h2>
-          <p>
-            عند استخدامك لخدماتنا، فإنك تمنحنا ثقتك في التعامل مع معلوماتك. نحن ندرك أهمية هذه المسؤولية ونعمل جاهدين على حماية بياناتك ومنحك التحكم الكامل بها.
-          </p>
-          <p>
-            تهدف هذه السياسة إلى توضيح نوع المعلومات التي نجمعها، ولماذا نجمعها، وكيف يمكنك تعديلها أو إدارتها أو حذفها.
-          </p>
-        </div>
-
-        <!-- جمع البيانات -->
-        <div class="content-section">
-          <h2>2. المعلومات التي نجمعها</h2>
-          <p>
-            نقوم بجمع المعلومات لتقديم خدمات أفضل لمستخدمينا، وتشمل:
-          </p>
-
-          <h3>2.1 المعلومات التي تقدمها</h3>
-          <p>
-            عند إنشاء حساب أو استخدام خدماتنا، قد تزودنا بالمعلومات التالية:
-          </p>
-          <ul>
-            <li>الاسم وبيانات التواصل</li>
-            <li>بيانات تسجيل الدخول</li>
-            <li>معلومات الدفع عند الحاجة</li>
-            <li>تفضيلات التواصل</li>
-          </ul>
-
-          <h3>2.2 المعلومات التلقائية</h3>
-          <p>
-            نقوم بجمع بعض المعلومات تلقائيًا عند استخدامك للخدمات:
-          </p>
-          <ul>
-            <li>معلومات الجهاز والمعرفات</li>
-            <li>بيانات الاستخدام والإحصائيات</li>
-            <li>معلومات الموقع (عند تفعيلها)</li>
-            <li>نوع المتصفح والإعدادات</li>
-          </ul>
-        </div>
-
-        <!-- استخدام البيانات -->
-        <div class="content-section">
-          <h2>3. كيفية استخدام المعلومات</h2>
-          <p>
-            نستخدم المعلومات التي نجمعها لتقديم وتحسين خدماتنا، وذلك من خلال:
-          </p>
-          <ul>
-            <li>تخصيص وتحسين تجربة المستخدم</li>
-            <li>معالجة العمليات والمدفوعات</li>
-            <li>إرسال التحديثات والإشعارات</li>
-            <li>تعزيز الأمان والتحقق من الهوية</li>
-            <li>تحليل الأداء وتحسين الخدمات</li>
-          </ul>
-        </div>
-
-        <!-- مشاركة البيانات -->
-        <div class="content-section">
-          <h2>4. مشاركة المعلومات</h2>
-          <p>
-            لا نقوم بمشاركة معلوماتك الشخصية مع أي جهة خارجية إلا في الحالات التالية:
-          </p>
-
-          <h3>4.1 بموافقتك</h3>
-          <p>
-            قد نشارك معلوماتك عند الحصول على موافقتك الصريحة.
-          </p>
-
-          <h3>4.2 لأسباب قانونية</h3>
-          <p>
-            قد نشارك المعلومات إذا كان ذلك ضروريًا من أجل:
-          </p>
-          <ul>
-            <li>الامتثال للقوانين أو الطلبات الحكومية</li>
-            <li>تطبيق شروط الاستخدام</li>
-            <li>منع الاحتيال أو المشاكل الأمنية</li>
-            <li>حماية حقوق المستخدمين وسلامتهم</li>
-          </ul>
-        </div>
-
-        <!-- الأمان -->
-        <div class="content-section">
-          <h2>5. أمان البيانات</h2>
-          <p>
-            نعمل على حماية بيانات المستخدمين من الوصول غير المصرح به أو التعديل أو الحذف:
-          </p>
-          <ul>
-            <li>نستخدم تشفير SSL لحماية البيانات</li>
-            <li>نراجع سياسات التخزين والمعالجة بشكل دوري</li>
-            <li>نقيد الوصول للبيانات على الموظفين المختصين فقط</li>
-          </ul>
-        </div>
-
-        <!-- الحقوق -->
-        <div class="content-section">
-          <h2>6. حقوقك</h2>
-          <p>
-            لديك حقوق فيما يتعلق ببياناتك الشخصية، منها:
-          </p>
-          <ul>
-            <li>الوصول إلى بياناتك</li>
-            <li>تصحيح المعلومات غير الدقيقة</li>
-            <li>طلب حذف البيانات</li>
-            <li>الاعتراض على معالجة البيانات</li>
-          </ul>
-        </div>
-
-        <!-- التحديثات -->
-        <div class="content-section">
-          <h2>7. التعديلات على السياسة</h2>
-          <p>
-            قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تغييرات على هذه الصفحة مع تحديث تاريخ السريان.
-          </p>
-          <p>
-            استمرارك في استخدام الخدمات يعني موافقتك على هذه التعديلات.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- التواصل -->
-      <div class="privacy-contact" data-aos="fade-up">
-        <h2>تواصل معنا</h2>
-        <p>
-          إذا كان لديك أي استفسار بخصوص سياسة الخصوصية، يمكنك التواصل معنا:
-        </p>
-        <div class="contact-details">
-          <p><strong>البريد الإلكتروني:</strong> privacy@example.com</p>
-          <p>
-            <strong>العنوان:</strong> 123 شارع الخصوصية، مدينة الأمان، 12345
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-</main>
-
-    <!-- Footer -->
+    </main>
     <footer class="footer-custom">
       <div class="container">
         <div class="footer-grid">
@@ -323,7 +351,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Scroll Top -->
     <a
       href="#"
@@ -347,5 +374,27 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      // Tailwind script
+      tailwind.config = { content: ["*"], theme: { extend: {} } };
+
+      // Image preview
+      document
+        .getElementById("images")
+        .addEventListener("change", function (e) {
+          const preview = document.getElementById("preview");
+          preview.innerHTML = "";
+          [...e.target.files].forEach((file) => {
+            const reader = new FileReader();
+            reader.onload = function (ev) {
+              const div = document.createElement("div");
+              div.className = "relative";
+              div.innerHTML = `<img src="${ev.target.result}" class="w-full h-24 object-cover rounded-2xl shadow">`;
+              preview.appendChild(div);
+            };
+            reader.readAsDataURL(file);
+          });
+        });
+    </script>
   </body>
 </html>
