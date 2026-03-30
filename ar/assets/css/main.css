@@ -7129,3 +7129,27 @@ background: rgba(0, 0, 0, 0.2);}
     background-image: url("https://picsum.photos/id/1015/1600/900");
   }
 } 
+.auth-links {
+  font-size: 15px;
+}
+
+.auth-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.auth-btn i {
+  font-size: 18px;
+}
+
+/* Hover */
+.auth-btn:hover,.auth-btn.register:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}

@@ -1236,30 +1236,6 @@ nav ul li a,
   background: linear-gradient(135deg, #4f2396, #7b4ce2) !important;
 color: #fff !important;
 }
-.auth-links {
-  font-size: 15px;
-}
-
-.auth-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
-  color: #333;
-  padding: 6px 12px;
-  border-radius: 20px;
-  transition: 0.3s ease;
-}
-
-.auth-btn i {
-  font-size: 18px;
-}
-
-/* Hover */
-.auth-btn:hover,.auth-btn.register:hover {
-  background-color: #f1f1f1;
-  color: #000;
-}
 
  
 .whatsapp-float {
