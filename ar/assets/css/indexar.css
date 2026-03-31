@@ -1,5 +1,5 @@
 :root {
-   --primary-color: #7b4dff;
+  --primary-color: #7b4dff;
   --primary-hover: #4f2396;
   --secondary-color: #895ffb;
   --text-dark: #222222;
@@ -117,10 +117,7 @@ body {
 }
 
 /* Hero Section - Airbnb Style */
-.hero-section {
-  padding: 60px 0 40px;
- }
-
+ 
 .hero-content {
   text-align: center;
   max-width: 800px;
@@ -162,8 +159,7 @@ body {
 
 /* Airbnb Modern Search Bar */
 .hero-section {
-  padding: 80px 0 60px;
- 
+ padding: 0 0 1rem 0 !important;
   display: flex;
   align-items: center;
 }
@@ -453,7 +449,7 @@ body {
 
 /* Section Styling */
 .section-padding {
-   padding: 20px 0;
+  padding: 20px 0;
 }
 
 .section-header {
@@ -1176,12 +1172,12 @@ body {
 }
 
 .header {
-  background-color: #fff;
-box-shadow: 0px 2px 8px rgba(149, 149, 149, 0.1);}
+  background-color: transparent;
+ }
 .logo h1,
 nav ul li a,
 .languageAndCurrency a apan {
-  color: black !important;
+  color: #fff !important;
 }
 .languageAndCurrency {
   font-size: 14px;
@@ -1189,7 +1185,7 @@ nav ul li a,
 
 .lang-item {
   text-decoration: none;
-  color: #555;
+  color: #fff;
   transition: 0.3s;
   font-weight: 500;
 }
@@ -1199,45 +1195,48 @@ nav ul li a,
 }
 
 .lang-item:hover {
-  color: #0d6efd;
+  color: #acadb0;
 }
 
 .divider {
   color: #ccc;
 }
-.container{
+.container {
   max-width: 1280px !important;
 }
-.scroll-top,.airbnb-search-btn {
+.scroll-top,
+.airbnb-search-btn {
   background-color: #4f2396 !important;
 }
-.airbnb-search-item{
+.airbnb-search-item {
   padding: 0 20px 0 0 !important;
 }
-.footer-logo{
+.footer-logo {
   width: 50px;
 }
-.room-details .room-header-image .room-badge,.rooms-2 .rooms-grid .room-card .room-image .room-features,.listing-badge{
+.room-details .room-header-image .room-badge,
+.rooms-2 .rooms-grid .room-card .room-image .room-features,
+.listing-badge {
   left: unset;
   right: 20px;
 }
-.listing-favorite{
+.listing-favorite {
   left: 12px;
   right: unset;
 }
 .arabic-select {
   direction: rtl;
   text-align: right;
-  background-position: left 0.75rem center;  
+  background-position: left 0.75rem center;
   padding-right: 0.75rem;
-  padding-left: 2rem;  
+  padding-left: 2rem;
 }
-.feature-badge,.listing-badge{
+.feature-badge,
+.listing-badge {
   background: linear-gradient(135deg, #4f2396, #7b4ce2) !important;
-color: #fff !important;
+  color: #fff !important;
 }
 
- 
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -1258,21 +1257,20 @@ color: #fff !important;
   background-color: #1ebe5d;
   transform: scale(1.1);
 }
- .scroll-top {
+.scroll-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
   left: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color:transparent !important;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: transparent !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 44px;
   height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
 }
- .scroll-top i{
+.scroll-top i {
   color: black;
- }
- 
+}
